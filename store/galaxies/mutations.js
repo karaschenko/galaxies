@@ -49,7 +49,7 @@ const sortGalaxies = (state, payload) => {
 }
 
 const setGalaxy = (state, payload) => {
-    state.galaxy = state.galaxies.find((i) => i.id == payload);
+    state.galaxy = state.galaxies.find((i) => i.id === +payload);
 };
 
 
